@@ -1,0 +1,318 @@
+body {
+    font-family: "Source Sans Pro";
+    display: grid;
+    margin: 0;
+    grid-template-areas: "header""content""footer";
+    box-sizing: border-box;
+    background-color: white
+}
+
+header {
+    background-color: #303134;
+    color: aliceblue;
+    padding: 2em;
+}
+
+.header-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+}
+
+
+.brand-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-items {
+    display: flex;
+    justify-content: center;
+}
+
+.title-items h1 {
+    font-size: 2rem;
+    font-family: "Pacifico";
+    margin-bottom: 0;
+    letter-spacing: 0.05em;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.brand-items p {
+    margin-top: 0;
+    font-style: italic;
+    font-size: small;
+    letter-spacing: 0.2em;
+    color: #ffb954;
+
+}
+
+.brand-items img {
+    width: 60px;
+    align-self: baseline;
+    transform: rotate(10deg);
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    font-size: 1.45rem;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+li a:hover,
+li a:focus {
+    color: #ffb954;
+}
+
+.feature {
+    min-height: 450px;
+    background-image: linear-gradient(180deg, transparent, #1c1b19), url("images/hero.jpg");
+    margin: 0px auto 2em auto;
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.feature-content {
+    margin-left: 1em;
+    margin-right: 1em;
+    max-width: 900px;
+}
+
+.feature h1 {
+    font-size: 3rem;
+}
+
+.feature h2 {
+    font-weight: lighter;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+
+.grid {
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 2em;
+}
+
+.display-grid {
+    flex: 1 400px;
+    cursor: pointer;
+}
+
+.display-grid img {
+    width: 100%;
+}
+
+.display-grid h2 {
+    font-weight: lighter;
+    line-height: 1.5em;
+}
+
+footer {
+    color: aliceblue;
+    text-align: center;
+    background-color: #303134;
+    padding: 2em 0;
+    margin-top: 2em;
+}
+
+footer h1,
+footer p {
+    margin: 0;
+}
+
+/* About Me Page */
+.about-me {
+    max-width: 800px;
+    width: 98vw;
+    margin: 2em auto;
+    text-align: center;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+
+}
+
+.profile-container img {
+    max-width: 150px;
+    border-radius: 50%;
+    border: 10px solid #303134;
+
+}
+
+.intro-desc h1 {
+    text-align: center;
+}
+
+.intro-desc p,
+.intro-body p {
+    line-height: 1.75;
+    font-size: 1.25rem;
+}
+
+.intro-body h3 {
+    font-size: 1.5rem;
+    color: #303134;
+    margin-bottom: 0px;
+}
+
+.recent-post {
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* contact me page */
+.contact-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.hi {
+    font-size: 3rem;
+    text-align: center;
+    word-spacing: normal;
+    text-align: center;
+    letter-spacing: 0.1em;
+
+}
+
+.shine {
+    color: black;
+    text-shadow: 0 0 2px #ffb954;
+}
+
+.contact h2 {
+    font-weight: lighter;
+    text-align: center;
+}
+
+.contact a {
+    color: #303134;
+}
+
+.contact a:hover,
+.contact a:focus {
+    color: #ffb954;
+}
+
+/* feature article */
+.feature-article {
+    width: 90vw;
+    margin: auto;
+}
+
+.feature-article h2 {
+    font-weight: lighter;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.feature-article h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.content-body {
+    width: 85%;
+    margin: auto;
+}
+
+.feature-article p {
+    line-height: 2.25;
+    font-size: larger;
+    text-align: left;
+    margin-top: 0.65em;
+}
+
+@media(min-width: 850px) {
+
+    .header-items,
+    ul {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    ul {
+        justify-content: right;
+    }
+
+    li {
+        margin-left: 0.75em;
+    }
+
+    .header-items {
+        justify-content: space-between;
+        align-items: baseline;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .feature {
+        justify-content: space-around;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .feature h1,
+    .feature p,
+    .feature h2 {
+        margin: 0;
+
+    }
+
+    .about-me {
+        text-align: left;
+    }
+
+    .profile-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+
+    }
+
+    .profile-container img {
+        width: 30%;
+    }
+
+    .intro-desc {
+        width: 60%;
+    }
+
+    .intro-body {
+        width: 95%;
+        margin: auto;
+    }
+}
